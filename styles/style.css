@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+h1 {
+  color: #292929;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: #292929;
+  font-weight: 600;
+}
+
+h3 {
+  color: #292929;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #292929;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  background: url("../images/background.jpg") center/cover no-repeat;
+}
+
+main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-left,
+.section-right {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 3rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.section-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.title {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.buttons {
+  margin: 1rem;
+  padding: 1rem 0;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.active {
+  background-color: #748663;
+  color: #f6f2ee;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 50%;
+}
+
+.main img {
+  margin: 1rem;
+  max-width: 50%;
+  border-radius: 1rem;
+}
+
+.main div {
+  margin-left: 2rem;
+}
+
+.main div p {
+  margin-top: 1rem;
+}
+
+.main div button {
+  background-color: #228ec3;
+  margin-top: 1rem;
+}
+
+.cards {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards .card {
+  text-decoration: none;
+  width: 20%;
+  margin: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards .card img {
+  width: 5rem;
+}
+
+.cards .card h3 {
+  margin: 0.5rem;
+}
+
+.cards .card p {
+  color: #748663;
+  font-weight: 600;
+}
+
+.cards .card:hover {
+  -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.user .user-info h3 {
+  font-size: 2rem;
+}
+
+.user::before {
+  content: "";
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  background: gray;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user::after {
+  content: "";
+  width: 49.37131%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  background: #1fad72;
+}
+
+.user img {
+  width: 25%;
+  margin: 0 0 1.5rem 1.5rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  margin: 1rem 0;
+}
+
+.progress-bars .progress-bar {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.progress-bars .progress-bar .progress-info {
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-bars .progress-bar .progress-info img {
+  width: 15%;
+}
+
+.progress-bars .progress-bar .progress-info img.m {
+  -webkit-filter: brightness(0) saturate(100%) invert(55%) sepia(70%) saturate(463%) hue-rotate(103deg) brightness(87%) contrast(91%);
+          filter: brightness(0) saturate(100%) invert(55%) sepia(70%) saturate(463%) hue-rotate(103deg) brightness(87%) contrast(91%);
+}
+
+.progress-bars .progress-bar .progress-info img.l {
+  -webkit-filter: brightness(0) saturate(100%) invert(77%) sepia(56%) saturate(386%) hue-rotate(350deg) brightness(92%) contrast(93%);
+          filter: brightness(0) saturate(100%) invert(77%) sepia(56%) saturate(386%) hue-rotate(350deg) brightness(92%) contrast(93%);
+}
+
+.progress-bars .progress-bar .progress-info img.d {
+  -webkit-filter: brightness(0) saturate(100%) invert(62%) sepia(22%) saturate(1421%) hue-rotate(158deg) brightness(93%) contrast(86%);
+          filter: brightness(0) saturate(100%) invert(62%) sepia(22%) saturate(1421%) hue-rotate(158deg) brightness(93%) contrast(86%);
+}
+
+.progress-bars .progress-bar .progress-info p {
+  font-size: 1.3rem;
+}
+
+.progress-bars .progress-bar .progress-info h2.m {
+  background: -webkit-gradient(linear, left top, right bottom, from(#1fad72), to(#33996f));
+  background: linear-gradient(to right bottom, #1fad72, #33996f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-bars .progress-bar .progress-info h2.l {
+  background: -webkit-gradient(linear, left top, right bottom, from(#e4bb67), to(#d5be90));
+  background: linear-gradient(to right bottom, #e4bb67, #d5be90);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-bars .progress-bar .progress-info h2.d {
+  background: -webkit-gradient(linear, left top, right bottom, from(#3ca7dd), to(#228ec3));
+  background: linear-gradient(to right bottom, #3ca7dd, #228ec3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-bars .progress-bar .progress-bar-line {
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bars .progress-bar .progress-bar-line::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ececec;
+  position: absolute;
+}
+
+.progress-bars .progress-bar .progress-bar-line.m {
+  background: -webkit-gradient(linear, left top, right bottom, from(#1fad72), to(#33996f));
+  background: linear-gradient(to right bottom, #1fad72, #33996f);
+}
+
+.progress-bars .progress-bar .progress-bar-line.m::after {
+  left: 73%;
+}
+
+.progress-bars .progress-bar .progress-bar-line.l {
+  background: -webkit-gradient(linear, left top, right bottom, from(#e4bb67), to(#d5be90));
+  background: linear-gradient(to right bottom, #e4bb67, #d5be90);
+}
+
+.progress-bars .progress-bar .progress-bar-line.l::after {
+  left: 43%;
+}
+
+.progress-bars .progress-bar .progress-bar-line.d {
+  background: -webkit-gradient(linear, left top, right bottom, from(#3ca7dd), to(#228ec3));
+  background: linear-gradient(to right bottom, #3ca7dd, #228ec3);
+}
+
+.progress-bars .progress-bar .progress-bar-line.d::after {
+  left: 57%;
+}
+
+@media only screen and (max-width: 1600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  :root {
+    font-size: 24px !important;
+  }
+  body {
+    background: fixed url("../images/background-rotated.jpg") center/cover no-repeat;
+  }
+  main {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    overflow-y: scroll;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main img {
+    margin: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  .main div {
+    margin: 0;
+  }
+  .user .user-info h3 {
+    font-size: 3rem;
+  }
+  .user .user-info p {
+    font-size: 1.5rem;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards .card {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
